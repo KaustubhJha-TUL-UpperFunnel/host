@@ -49,6 +49,7 @@ class App extends Component{
           </Navbar>
 
           <Route path="/" exact render={()=><HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
+          <Route path="/host" exact render={()=><HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
           <Route path="/about" render={()=><AboutPage title={this.state.about.title} />} />
           <Route path="/contact" render={()=><ContactPage title={this.state.contact.title} text={this.state.contact.text}/>} />
 
